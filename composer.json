@@ -11,13 +11,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Inani\\LaravelNovaConfiguration\\": "src/"
+            "StoutZero\\LaravelNovaConfiguration\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Inani\\LaravelNovaConfiguration\\ToolServiceProvider"
+                "StoutZero\\LaravelNovaConfiguration\\ToolServiceProvider"
             ]
         }
     },

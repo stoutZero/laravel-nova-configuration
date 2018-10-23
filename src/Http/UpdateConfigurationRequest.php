@@ -1,6 +1,6 @@
 <?php
 
-namespace Inani\LaravelNovaConfiguration\Http;
+namespace StoutZero\LaravelNovaConfiguration\Http;
 
 use Illuminate\Foundation\Http\FormRequest;
 

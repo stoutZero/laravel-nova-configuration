@@ -1,5 +1,5 @@
 <?php
-namespace Inani\LaravelNovaConfiguration\Helpers;
+namespace StoutZero\LaravelNovaConfiguration\Helpers;
 
 use Illuminate\Database\Eloquent\Model;
 

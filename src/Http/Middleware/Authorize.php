@@ -1,8 +1,8 @@
 <?php
 
-namespace Inani\LaravelNovaConfiguration\Http\Middleware;
+namespace StoutZero\LaravelNovaConfiguration\Http\Middleware;
 
-use Inani\LaravelNovaConfiguration\LaravelNovaConfiguration;
+use StoutZero\LaravelNovaConfiguration\LaravelNovaConfiguration;
 
 class Authorize
 {
@@ -15,6 +15,9 @@ class Authorize
      */
     public function handle($request, $next)
     {
-        return resolve(LaravelNovaConfiguration::class)->authorize($request) ? $next($request) : abort(403);
+        return
+            resolve(LaravelNovaConfiguration::class)->authorize($request)
+                ? $next($request)
+                : abort(403);
     }
 }

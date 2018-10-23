@@ -1,6 +1,6 @@
 <?php
 
-namespace Inani\LaravelNovaConfiguration;
+namespace StoutZero\LaravelNovaConfiguration;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;
