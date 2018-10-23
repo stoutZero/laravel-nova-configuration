@@ -14,8 +14,13 @@ class LaravelNovaConfiguration extends Tool
      */
     public function boot()
     {
-        Nova::script('laravel-nova-configuration', __DIR__.'/../dist/js/tool.js');
-        Nova::style('laravel-nova-configuration', __DIR__.'/../dist/css/tool.css');
+        Nova::script(
+            'laravel-nova-configuration', __DIR__.'/../dist/js/tool.js'
+        );
+
+        Nova::style(
+            'laravel-nova-configuration', __DIR__.'/../dist/css/tool.css'
+        );
     }
 
     /**

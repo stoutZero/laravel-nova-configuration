@@ -19,7 +19,7 @@ class Configuration extends Model
     {
         $line =  self::getElementByKey($key);
 
-        if(is_null($line)){
+        if (is_null($line)) {
             return null;
         }
 
@@ -36,7 +36,8 @@ class Configuration extends Model
     public static function set($key, $value)
     {
         $line = self::getElementByKey($key);
-        if(is_null($line)){
+        
+        if (is_null($line)) {
             $line = new self();
             $line->key = $key;
         }
@@ -70,9 +71,10 @@ class Configuration extends Model
     {
         $configuration = self::find($id);
 
-        if(is_null($configuration)){
+        if (is_null($configuration)) {
             return false;
         }
+
         $configuration->key = $key;
         $configuration->value = $value;
 
